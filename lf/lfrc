@@ -128,7 +128,7 @@ cmd touch %{{
 map m
 map ms mark-save
 map md mkdir
-map mt touch
+map mf touch
 
 
 # go-to shortcuts

@@ -5,6 +5,8 @@ alias lss=ls
 alias la='ls -a'
 alias rd='rm -r'
 alias md='mkdir'
+alias yp='pwd | pbcopy'
+alias yfp='echo $(whoami)@$(hostname):$(pwd) | pbcopy'
 
 # edit 
 alias E='hx .'
@@ -20,6 +22,7 @@ alias lg="lazygit"
 alias ta='tmux attach'
 alias td='tmux detach'
 alias tn='tmux new -A -s'
+alias tl='tmux list-sessions'
 
 # networking
 alias ip='ipconfig getifaddr en0'
