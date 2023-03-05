@@ -2,6 +2,7 @@
 
 # unix
 alias lss=ls
+alias la='ls -a'
 alias rd='rm -r'
 alias md='mkdir'
 
