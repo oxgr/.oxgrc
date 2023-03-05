@@ -1,0 +1,54 @@
+inherits = "base16_default_dark"
+
+# Author: ox <@oxgr>
+
+# "ui.popup"  = { fg = "white", bg = "gray2" }
+"ui.background" = { fg = "cyan" }
+"ui.menu" = { fg = "light-cyan", bg = "mid-gray" }
+"ui.text" = { fg = "light-yellow" }
+"ui.text.focus" = { fg = "red" }
+"ui.popup" = { fg = "light-cyan", bg = "mid-gray" }
+"ui.window" = { fg = "light-cyan" }
+"ui.help" = { fg = "light-cyan", bg = "mid-gray" }
+"ui.gutter" = { bg = "gray" }
+"ui.linenr" = { bg = "gray" }
+"ui.linenr.selected" = { bg = "gray" }
+# "ui.selection" = { modifiers = [ "reversed"] }
+"ui.statusline" = { bg = "mid-gray" }
+"ui.statusline.inactive" = { bg = "gray" }
+"ui.statusline.normal" = { fg = "cyan", modifiers = ["reversed"] }
+"ui.statusline.insert" = { fg = "red", modifiers = ["reversed"] }
+"ui.statusline.select" = { fg = "light-green", modifiers = ["reversed"] }
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.match" = { fg = "light-yellow", modifiers = ["underlined"] }
+"ui.cursor.primary" = { modifiers = ["reversed", "slow_blink"] }
+"ui.cursor.secondary" = { modifiers = ["reversed"] }
+
+"punctuation" = { fg = "white" }
+"comment" = { fg = "comment" }
+"variable" = "yellow"
+"variable.builtin" = { fg = "yellow", modifiers = ["italic"] }
+"variable.parameter" = { fg = "light-red", modifiers = ["italic"] }
+# "variable.other.member" = "light-red"
+"variable.other.member" = "light-magenta"
+"constant.numeric" = "light-cyan"
+"constant" = { fg = "yellow", modifiers = [] }
+"attribute" = "light-cyan"
+"type" = "light-yellow"
+"string"  = "light-blue"
+"constant.character.escape" = "light-cyan"
+"function" = "light-green"
+"constructor" = { fg = "light-green", modifiers = ["italic"] }
+"special" = "light-green"
+# "keyword" = { fg = "green", modifiers = ["italic"] }
+"keyword" = "green"
+# "keyword" = "light-red"
+"label" = "light-red"
+# "namespace" = "green"
+"namespace" = { fg = "green", modifiers = ["italic"] }
+
+[palette]
+mid-gray = "#333333"
+comment = "#888888"
+# light-gray = "#d7d9fc"
+# white = "#d7d9fc"
