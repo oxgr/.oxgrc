@@ -47,6 +47,35 @@ inherits = "base16_default_dark"
 # "namespace" = "green"
 "namespace" = { fg = "green", modifiers = ["italic"] }
 
+"markup.heading" = "green"
+"markup.list" = "light-red"
+"markup.bold" = { fg = "light-yellow", modifiers = ["bold"] }
+"markup.italic" = { fg = "light-magenta", modifiers = ["italic"] }
+"markup.link.url" = { fg = "yellow", modifiers = ["underlined"] }
+"markup.link.text" = "light-red"
+"markup.quote" = "light-cyan"
+"markup.raw" = "light-red"
+"markup.normal" = { fg = "blue" }
+"markup.insert" = { fg = "green" }
+"markup.select" = { fg = "magenta" }
+
+"diff.plus" = "light-green"
+"diff.delta" = "yellow"
+"diff.minus" = "light-red"
+
+"info" = "light-blue" 
+"hint" = "gray" 
+"debug" = "gray"  
+"warning" = "yellow" 
+"error" = "light-red" 
+
+"diagnostic" = { modifiers = ["underlined"] }
+"diagnostic.info" = { fg = "light-blue", modifiers = ["underlined"] }
+"diagnostic.hint" = { fg = "gray", modifiers = ["underlined"] }
+"diagnostic.debug" ={ fg ="gray",  modifiers = ["underlined"] }
+"diagnostic.warning" = { fg = "yellow", modifiers = ["underlined"] }
+"diagnostic.error" = { fg ="light-red", modifiers = ["underlined"] }
+
 [palette]
 mid-gray = "#333333"
 comment = "#888888"

@@ -73,8 +73,8 @@ IS_SSH=$? # 0=true, 1=false
 # The style aliases for ANSI SGR codes (defined above) can be used there too
 
 # Info segments
-HEADLINE_DO_USER=true
-HEADLINE_DO_HOST=true
+HEADLINE_DO_USER=false
+HEADLINE_DO_HOST=false
 HEADLINE_DO_PATH=true
 HEADLINE_DO_GIT_BRANCH=true
 HEADLINE_DO_GIT_STATUS=true
@@ -106,14 +106,14 @@ HEADLINE_TRUNC_PREFIX='...' # shown where <path> or <branch> is truncated, consi
 # Info styles
 HEADLINE_STYLE_DEFAULT='' # style applied to entire info line
 HEADLINE_STYLE_JOINT=$faint$light_white
-HEADLINE_STYLE_USER=$bold$red
-HEADLINE_STYLE_HOST=$bold$green
-HEADLINE_STYLE_PATH=$bold$blue
-HEADLINE_STYLE_BRANCH=$bold$cyan
-HEADLINE_STYLE_STATUS=$bold$magenta
+HEADLINE_STYLE_USER=$red
+HEADLINE_STYLE_HOST=$green
+HEADLINE_STYLE_PATH=$light_yellow
+HEADLINE_STYLE_BRANCH=$light_red
+HEADLINE_STYLE_STATUS=$green
 
 # Info options
-HEADLINE_INFO_MODE=prompt # precmd|prompt (whether info line is in PROMPT or printed by precmd)
+HEADLINE_INFO_MODE=precmd # precmd|prompt (whether info line is in PROMPT or printed by precmd)
   # use "precmd" for window resize to work properly (but Ctrl+L doesn't show info line)
   # use "prompt" for Ctrl+L to clear properly (but window resize eats previous output)
 

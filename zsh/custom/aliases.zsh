@@ -10,7 +10,7 @@ alias yfp='echo $(whoami)@$(hostname):$(pwd) | pbcopy'
 
 # edit 
 alias E='hx .'
-alias rc='hx ~/.zshrc'
+alias conf='hx ~/.oxgrc'
 
 # tools
 alias git='/usr/local/Cellar/git/2.39.2/bin/git'
