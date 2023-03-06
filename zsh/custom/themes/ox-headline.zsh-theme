@@ -109,7 +109,8 @@ HEADLINE_STYLE_JOINT=$faint$light_white
 HEADLINE_STYLE_USER=$red
 HEADLINE_STYLE_HOST=$green
 HEADLINE_STYLE_PATH=$light_yellow
-HEADLINE_STYLE_BRANCH=$light_red
+HEADLINE_STYLE_PATH_BASE=$light_red
+HEADLINE_STYLE_BRANCH=$light_magenta
 HEADLINE_STYLE_STATUS=$green
 
 # Info options
@@ -368,7 +369,7 @@ headline_precmd() {
   local user_str host_str path_str branch_str status_str
   [[ $HEADLINE_DO_USER == 'true' ]] && user_str=$USER
   [[ $HEADLINE_DO_HOST == 'true' ]] && host_str=$(hostname -s)
-  [[ $HEADLINE_DO_PATH == 'true' ]] && path_str=$(print -rP '%~')
+  [[ $HEADLINE_DO_PATH == 'true' ]] && path_str=$(print -rP '%-3~')
   [[ $HEADLINE_DO_GIT_BRANCH == 'true' ]] && branch_str=$(headline_git_branch)
   [[ $HEADLINE_DO_GIT_STATUS == 'true' ]] && status_str=$(headline_git_status)
 

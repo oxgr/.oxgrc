@@ -25,6 +25,30 @@ wifi() {
 
 # Mount to local server
 ncrw() {
-	mkdir -p ~/Nancarrow 
-	mount_afp -i afp://Faadhi@192.168.92.20/Nancarrow ~/Nancarrow
+
+	folder="ncrw"
+
+	mkdir -p "~/$folder"
+
+	mkdir -p "~/$folder/Nancarrow"
+	mount_afp -i "afp://Faadhi@192.168.92.20/Nancarrow" "~/$folder/Nancarrow"
+
+	for i in "$@" 
+	do
+	  printf "$1"
+
+		mkdir -p "~/$folder/$1"
+		mount_afp -i "afp://Faadhi@192.168.92.20/$1" "~/$folder/$1"				
+  	shift
+		
+  done
+	# case "$1" in
+ #     Movies)
+ #        printf "[%s] argument: %s\n" "$1" "$2"
+ #        shift
+ #        ;;
+ #     --)                                      
+ #        break
+ #        ;;
+ #  esac
 }
