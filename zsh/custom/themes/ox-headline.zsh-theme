@@ -89,7 +89,7 @@ HEADLINE_BRANCH_PREFIX='' # consider " "
 HEADLINE_USER_BEGIN=''
 if [ $IS_SSH = 0 ]; then HEADLINE_USER_BEGIN='=> '; fi
 HEADLINE_USER_TO_HOST=' @ '
-HEADLINE_HOST_TO_PATH=': '
+HEADLINE_HOST_TO_PATH=' : '
 HEADLINE_PATH_TO_BRANCH=' | ' # only used when no padding between <path> and <branch>
 HEADLINE_PATH_TO_PAD='' # used if padding between <path> and <branch>
 HEADLINE_PAD_TO_BRANCH='' # used if padding between <path> and <branch>
@@ -110,10 +110,10 @@ HEADLINE_STYLE_USER=$bold$red
 HEADLINE_STYLE_HOST=$bold$green
 HEADLINE_STYLE_PATH=$bold$blue
 HEADLINE_STYLE_BRANCH=$bold$cyan
-HEADLINE_STYLE_STATUS=$bold$magena
+HEADLINE_STYLE_STATUS=$bold$magenta
 
 # Info options
-HEADLINE_INFO_MODE=precmd # precmd|prompt (whether info line is in PROMPT or printed by precmd)
+HEADLINE_INFO_MODE=prompt # precmd|prompt (whether info line is in PROMPT or printed by precmd)
   # use "precmd" for window resize to work properly (but Ctrl+L doesn't show info line)
   # use "prompt" for Ctrl+L to clear properly (but window resize eats previous output)
 
@@ -151,8 +151,9 @@ HEADLINE_DO_GIT_STATUS_COUNTS=false # set "true" to show count of each status
 HEADLINE_DO_GIT_STATUS_OMIT_ONE=false # set "true" to omit the status number when it is 1
 
 # Prompt
-HEADLINE_PROMPT='%(#.#.%(!.!.$)) ' # consider "%#"
+HEADLINE_PROMPT='%(#.#.%(!.!.>)) ' # consider "%#"
 HEADLINE_RPROMPT=''
+HEADLINE_STYLE_PROMPT=$yellow # tried to add style to prompt, but don't know where to put this
 
 # Clock (prepends to RPROMPT)
 HEADLINE_DO_CLOCK=false # whether to show the clock
