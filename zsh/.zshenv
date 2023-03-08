@@ -1,4 +1,4 @@
-# Paths
+## Paths ## 
 
 # global
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -21,7 +21,9 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$HOME/.ofpkg/bin"
 export PATH="$PATH:$HOME/.ofam.bin"
 
-# Defaults
-export EDITOR=hx
-# export PAGER=bat
 
+## Defaults ##
+
+export EDITOR=nvim
+# export PAGER=bat
+# export OPENER=

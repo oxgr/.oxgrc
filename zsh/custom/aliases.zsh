@@ -5,12 +5,13 @@ alias lss=ls
 alias la='ls -a'
 alias rd='rm -r'
 alias md='mkdir'
+alias mf='touch'
 alias yp='pwd | pbcopy'
 alias yfp='echo $(whoami)@$(hostname):$(pwd) | pbcopy'
 
 # edit 
-alias E='hx .'
-alias conf='hx ~/.oxgrc'
+alias E='$EDITOR .'
+alias conf='$EDITOR ~/.oxgrc'
 
 # tools
 alias git='/usr/local/Cellar/git/2.39.2/bin/git'
