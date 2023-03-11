@@ -1,0 +1,9 @@
+# More info here:
+# https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md
+
+gui:
+  theme:
+    selectedLineBgColor:
+      - default
+    selectedRangeBgColor:
+      - default
