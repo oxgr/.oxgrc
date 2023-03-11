@@ -102,7 +102,6 @@ HEADLINE_PAD_CHAR=' ' # repeated for space between <path> and <branch>
 
 # Info truncation symbol
 HEADLINE_TRUNC_PREFIX='...' # shown where <path> or <branch> is truncated, consider "…"
-
 # Info styles
 HEADLINE_STYLE_DEFAULT='' # style applied to entire info line
 HEADLINE_STYLE_JOINT=$faint$light_white
@@ -114,7 +113,7 @@ HEADLINE_STYLE_BRANCH=$light_magenta
 HEADLINE_STYLE_STATUS=$green
 
 # Info options
-HEADLINE_INFO_MODE=precmd # precmd|prompt (whether info line is in PROMPT or printed by precmd)
+HEADLINE_INFO_MODE="precmd" # precmd|prompt (whether info line is in PROMPT or printed by precmd)
   # use "precmd" for window resize to work properly (but Ctrl+L doesn't show info line)
   # use "prompt" for Ctrl+L to clear properly (but window resize eats previous output)
 
@@ -152,7 +151,7 @@ HEADLINE_DO_GIT_STATUS_COUNTS=false # set "true" to show count of each status
 HEADLINE_DO_GIT_STATUS_OMIT_ONE=false # set "true" to omit the status number when it is 1
 
 # Prompt
-HEADLINE_PROMPT='%(#.#.%(!.!.>)) ' # consider "%#"
+HEADLINE_PROMPT='〉' # '⮁' # '›' # '%(#.#.%(!.!.>)) ' # consider "%#"
 HEADLINE_RPROMPT=''
 HEADLINE_STYLE_PROMPT=$yellow # tried to add style to prompt, but don't know where to put this
 
