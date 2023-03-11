@@ -18,6 +18,7 @@ alias git='/usr/local/Cellar/git/2.39.2/bin/git'
 alias py="python3"
 alias pip="python3 -m pip"
 alias lg="lazygit"
+alias colortest='msgcat --color=test'
 
 # tmux
 alias ta='tmux attach'
