@@ -14,7 +14,7 @@ alias E='$EDITOR .'
 alias conf='$EDITOR ~/.oxgrc'
 
 # tools
-alias git='/usr/local/Cellar/git/2.39.2/bin/git'
+# alias git='/usr/local/Cellar/git/2.39.2/bin/git'
 alias py="python3"
 alias pip="python3 -m pip"
 alias lg="lazygit"
